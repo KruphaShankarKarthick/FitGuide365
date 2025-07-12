@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FitnessStyle.css"> <!-- Adjust the path to your CSS file -->
+    <header>
+        
+    
+        
+    <!-- Make the main heading a clickable button -->
+        <h1 onclick="redirectToFitnessHTML()">FitGuide365</h1>
+    </header>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("D:/UIUX/Proj1/IMG/Main_page_BG.jpg");/*Adujust the location accordingly*/
+            background-size: cover; /* Adjust this based on your image and design preferences */
+            background-position: top;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+header {
+    background-color:#1e1e1e;
+    color: #fff;    
+    text-align: center;
+    padding: 1em;
+    font-family: 'Impact', 'Charcoal', sans-serif;
+}
+
+nav {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    font-weight: bold;
+}
+.nav a:hover {
+            color: #ccc;
+            background-color: black;
+}
+section {
+    padding: 20px;
+}
+
+
+
+
+        /* Add a class to hide/show sections */
+        .hidden {
+            display: none;
+        }
+    </style>
+     <script src="Selection.js"></script>
+</head>
+<body>
+    <audio  autoplay src="background_music.mp3"></audio>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+   
+    
+
+    <script src="comments.js"></script>
+    
+    
+    <script>
+        // Function to redirect to FitnessHTML
+    function redirectToFitnessHTML() {
+        window.location.href = 'FitnessHTML.html';
+    }
+        // JavaScript function to show/hide sections based on the clicked tab
+        
+        
+    </script>
+
+</body>
+</html>

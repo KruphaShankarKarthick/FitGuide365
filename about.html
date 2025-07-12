@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FitnessStyle.css"> <!-- Adjust the path to your CSS file -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("D:/UIUX/Proj1/IMG/about_BG.jpg");/*Adujust the location accordingly*/
+            background-size: cover; /* Adjust this based on your image and design preferences */
+            background-position: top;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: rgb(180, 180, 180); /* Set the default font color to white */
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            font-family: 'Impact', 'Charcoal', sans-serif;
+        }
+
+        nav {
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover {
+            background-color: orange;
+        }
+
+        section {
+            padding: 20px;
+            color: #c1c1c1;
+        }
+
+        /* Style for the about frame */
+        .about-frame {
+            float: left;
+            width: 30%; /* Adjust the width based on your design preferences */
+            margin-right: 20px;
+        }
+
+        /* Clear float to prevent other elements from wrapping around the floated element */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icon {
+            width: 70px;
+            height: 40px;
+            background-color: #ffffff00;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .social-icon img {
+            width: 45px; /* Adjust the size of the icon */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 onclick="redirectToFitnessHTML()">FitGuide365</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="clearfix">
+        <!-- About frame -->
+        <div class="about-frame">
+            <!-- Your photo goes here -->
+            <img src="IMG/About_Pic.JPG" alt="Your Photo" style="width: 100%; border-radius: 10px;">
+        </div>
+
+        <!-- About information -->
+        <div>
+            <h2>About Me</h2>
+            <p>
+                Welcome to FitGuide365! I am Krupha Shankar specializing in BodyBuilding and Physical Therepy. I have Acheived a fat loss of around 60 pounds(lbs).
+            </p>
+            <p>
+                I ensure that the routine provided will improve your physical health and mental health in a large sum.
+            </p> 
+            <p>
+                Any more details required please contact us in the contact tab or DM me in my social media handles.
+            </p>
+            <p>
+                Thank you for choosing FitGuide365 for your Fitness.
+            </p>
+            <!-- Add more information about yourself as needed -->
+        </div>
+        <div class="social-icons">
+            <!-- Instagram -->
+            <div class="social-icon">
+                <a href="https://www.instagram.com/krupha___shankar?igsh=aXptdHZ5ZTdibXQ5" target="_blank">
+                    <img src="IMG/insta.png" alt="Instagram">
+                </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/kruphashankar-karthick-144018249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="IMG/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function redirectToFitnessHTML() {
+            window.location.href = 'FitnessHTML.html';
+        }
+    </script>
+
+</body>
+</html>

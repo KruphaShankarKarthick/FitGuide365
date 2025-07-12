@@ -1,0 +1,62 @@
+TO Embed A video
+<div id="workoutVideo">
+            <!-- Embed workout videos here -->
+            <!-- Example: <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe> -->
+        </div>
+DONO
+<script>
+        function selectWorkoutType() {
+            var selectedType = document.getElementById('workoutType').value;
+            var displayArea = document.getElementById('selectedWorkoutType');
+
+            // Display the selected workout type (you can customize this based on your needs)
+            displayArea.textContent = 'Selected Workout Type: ' + selectedType;
+        }
+        // Redirect to the appropriate page based on the selected option
+        if (selectedType === 'muscleTraining') {
+                window.location.href = 'muscle_training.html'; // Replace with the actual page URL
+            } else if (selectedType === 'cardio') {
+                window.location.href = 'cardio.html'; // Replace with the actual page URL
+            } else if (selectedType === 'aerobics') {
+                window.location.href = 'aerobics.html'; // Replace with the actual page URL
+            } else if (selectedType === 'homeWorkouts') {
+                window.location.href = 'home_workouts.html'; // Replace with the actual page URL
+            }
+    </script>
+    Comment Section in contact page
+    <form>
+            <div id="commentDialog">
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" rows="4" required></textarea>
+                <button onclick="submitComment()">Submit Comment</button>
+            </div>
+    
+        </form>
+
+
+
+<section id="contact" class="hidden">
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? Reach out to us!</p>
+    <form>
+        <div id="commentDialog">
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+            <button onclick="submitComment()">Submit Comment</button>
+        </div>
+
+    </form>
+    <div id="selectedWorkoutType"></div>
+</section>
+
+
+
+neck rotaion 
+arm rotaion
+elbow extension
+wrist rotaion
+back rotaion
+hip rotaion
+leg swinging
+knee rotaion
+ankle strech

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FitnessStyle.css"> <!-- Adjust the path to your CSS file -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("D:/UIUX/Proj1/IMG/nutrition_bg.jpg");/*Adujust the location accordingly*/
+            background-size: cover; /* Adjust this based on your image and design preferences */
+            background-position: top;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Set the default font color to white */
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            font-family: 'Impact', 'Charcoal', sans-serif;
+        }
+
+        nav {
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover {
+            background-color: orange;
+        }
+
+        section {
+            padding: 20px;
+            color: black;
+        }
+
+        /* Style for the nutrition frame */
+        .nutrition-frame {
+            float: left;
+            width: 30%; /* Adjust the width based on your design preferences */
+            margin-right: 20px;
+        }
+
+        /* Clear float to prevent other elements from wrapping around the floated element */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Style for the video */
+        .nutrition-video {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 onclick="redirectToFitnessHTML()">FitGuide365</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="clearfix">
+        <!-- Nutrition frame -->
+        <div class="nutrition-frame">
+            <!-- Your nutrition photo goes here -->
+            <img src="IMG/diet.png" alt="Nutrition Photo" style="width: 100%; border-radius: 10px;">
+        </div>
+
+        <!-- Nutrition content -->
+        <div>
+            <h2>Nutrition Guide</h2>
+            <p>
+                Achieving a balanced diet is essential for optimal health. A nutritious intake comprises a variety of foods rich in essential nutrients.
+                 Include whole grains, fruits, vegetables, lean proteins, and healthy fats in your daily meals.
+            </p>
+            <p>
+                Whole grains provide sustained energy, fruits and vegetables offer vitamins and minerals, while lean proteins support muscle health.
+            </p>
+            <p>
+                Healthy fats, found in sources like avocados and nuts, contribute to heart health. Strive for portion control and stay hydrated.
+            </p>
+            <p>
+                A balanced diet not only supports overall well-being but also aids in weight management, boosts immunity, and enhances energy levels for an active and fulfilling lifestyle.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nutrition video -->
+    <section class="nutrition-video">
+        <h2>Nutrition Video</h2>
+        <!-- Add video embeds or links related to nutrition -->
+        <iframe width="560" height="315" src="VID/nutrition.mp4" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <script>
+        function redirectToFitnessHTML() {
+            window.location.href = 'FitnessHTML.html';
+        }
+    </script>
+
+</body>
+</html>

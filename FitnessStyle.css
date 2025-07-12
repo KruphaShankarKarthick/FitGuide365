@@ -1,0 +1,98 @@
+/* Your existing CSS styles here */
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('D:/UIUX/Proj1/IMG/Main_page_BG.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff; /* Set the text color to white */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000000; /* Change text color on hover */
+}
+
+section {
+    color: #ffffff; /* Set the text color of section content to white */
+}
+
+
+nav {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7em 1em; /* Adjust padding as needed */
+    margin: 0 1em;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+/* Background box on hover */
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px; /* Adjust the height of the box */
+    background-color: black;
+    transform: scaleX(0); /* Initially set to scale 0 in the x-direction */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1); /* Expand the box on hover */
+    transform-origin: bottom right;
+}
+
+.video-container {
+    float: right;
+    margin-left: 20px;
+    margin-right: 40px; /* Adjust the value to move the video further right */
+    padding: 20px; /* Optional: add padding if needed */
+}
+
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+        <link rel="stylesheet" href="FitnessStyle.css"> <!-- Adjust the path to your CSS file -->
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("D:/UIUX/Proj1/IMG/cardio.jpg");/*Adujust the location accordingly*/
+                background-size: cover; /* Adjust this based on your image and design preferences */
+                background-position: center;
+                background-repeat: no-repeat;
+                font-family: Arial, sans-serif;
+            }
+    
+    header {
+        background-color:#1e1e1e;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        font-family: 'Impact', 'Charcoal', sans-serif;
+    }
+    
+    nav {
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 1em;
+        font-weight: bold;
+    }
+    .nav-btn:hover {
+    background-color: orange;
+}
+    section {
+        padding: 20px;
+    }
+    
+    
+    
+    
+            /* Add a class to hide/show sections */
+            .hidden {
+                display: none;
+            }
+            /* Add a class for the circular logos */
+    
+        </style>
+    </head>
+    <body>
+    
+        
+    
+        
+    
+<body>
+
+    <header>
+        <h1 onclick="redirectToFitnessHTML()">FitGuide365</h1>
+    </header>
+    
+
+    <!-- In your Muscle Training HTML file -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="workouts" >
+        <h2>Workouts</h2>
+        <p>Choose your workout type:</p>
+  
+        <div>
+            <a href="muscle_training.html" class="workoutButton">Muscle Training</a>
+            <a href="cardio.html" class="workoutButton">Cardio</a>
+            <a href="aerobics.html" class="workoutButton">Aerobics</a>
+            <a href="home_workouts.html" class="workoutButton">Home Workouts</a>
+        </div>
+    </section>
+
+
+
+
+
+<script>
+    
+    function redirectToPage(page) {
+        // You can customize this function based on your page URLs
+        switch (page) {
+            case 'A':
+                window.location.href = 'muscle_training.html';
+                break;
+            case 'B':
+                window.location.href = 'cardio.html';
+                break;
+            case 'C':
+                window.location.href = 'Aerobics.html';
+                break;
+            case 'D':
+                window.location.href = 'home_workout.html';
+                break;
+            default:
+                break;
+        }
+    }
+    // Function to redirect to FitnessHTML
+    function redirectToFitnessHTML() {
+        window.location.href = 'FitnessHTML.html'; // Replace with the actual file path or URL
+    }
+</script>
+
+
+
+    <section id="treadmill">
+        <h2>CARDIO- Treadmill</h2>
+        <p>Treadmill is a machine that is used in enclosed area for indoorsy persons</p>
+        <!-- Add video embeds or links related to chest workouts -->
+        <iframe width="560" height="315" src="VID/treadmill.mp4" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="eliptical">
+        <h2>CARDIO- Elliptical</h2>
+        <p>Elliptical is an intense exercise for your heart that can increse your endurance 10-fold</p>
+        <!-- Add video embeds or links related to chest workouts -->
+        <iframe width="560" height="315" src="VID/eliptical.mp4" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+
+    <section id="Sprinting">
+        <h2>CARDIO- Sprinting</h2>
+        <p>Sprinting is a intense short term  cardio exercise which increases overall strenght and pain tolerence</p>
+        <!-- Add video embeds or links related to chest workouts -->
+        <iframe width="560" height="315" src="VID/Sprinting.mp4" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+
+    
+</body>
+</html>
